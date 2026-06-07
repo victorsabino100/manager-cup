@@ -1,0 +1,17 @@
+{
+  "name": "Manager Cup",
+  "short_name": "Manager Cup",
+  "description": "Gerencie seus campeonatos de botão",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0e1520",
+  "theme_color": "#c9a84c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%230e1520' rx='32'/><text y='130' x='50%' font-size='110' text-anchor='middle'>🏆</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
