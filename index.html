@@ -1212,9 +1212,11 @@ function openTournament(T){
   const tabsEl=document.getElementById('t-tabs');const bodyEl=document.getElementById('t-body');
   tabsEl.innerHTML='';bodyEl.innerHTML='';
   const tabs=[];
-  if(T.type!=='mata-mata'){
+  if(T.type==='liga'){
     tabs.push({id:'standings',label:'Classificação'});
-    tabs.push({id:'league',label:T.type==='copa'?'Grupos':'Liga'});
+    tabs.push({id:'league',label:'Liga'});
+  } else if(T.type==='copa'){
+    tabs.push({id:'league',label:'Grupos'});
   }
   tabs.push({id:'knockout',label:'Mata-Mata'});
   tabs.forEach((tab,i)=>{

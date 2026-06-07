@@ -1,4 +1,4 @@
-const CACHE = 'manager-cup-v4';
+const CACHE = 'manager-cup-v5';
 const ASSETS = ['./', './index.html', './manifest.json'];
 
 self.addEventListener('install', e => {
