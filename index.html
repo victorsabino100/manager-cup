@@ -1245,6 +1245,10 @@ function renderTournament(){
   const T=window._T;if(!T)return;
   const active=document.querySelector('.t-panel.active');if(!active)return;
   const id=active.id.replace('panel-','');
+  // Copa não tem classificação geral — redireciona para grupos se necessário
+  if(id==='standings'&&T.type==='copa'){
+    document.querySelector('.t-tab').click();return;
+  }
   if(id==='standings')renderStandings(T,active);
   else if(id==='league')renderLeague(T,active);
   else if(id==='knockout')renderKnockout(T,active);
